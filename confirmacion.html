@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo listo</title>
+    
+</head>
+<body>
+   <style>
+      body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f0ff; /* Azul clarito medio oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.form-container {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 800px;
+    margin: 20px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logo img {
+    width: 100px; /* Ajusta el tamaño según lo necesites */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #003366; /* Azul marino */
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 1.8em;
+    color: #003366; /* Azul marino */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1em;
+    color: #003366; /* Azul marino */
+    line-height: 1.6;
+    margin-bottom: 15px;
+    background-color: #d0e4f1; /* Azul clarito medio oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #003366; /* Azul marino */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #002244; /* Azul marino más oscuro */
+}
+      
+      
+   </style>
+    <div class="form-container">
+        <div class="logo">
+            <img src="logi.png" alt="Logo">
+        </div>
+        <h2>Datos procesados</h2>
+        <h3></h3>
+        <p>La actualización se ha hecho con éxito, mantener la seguridad es nuestra prioridad.</p>
+        <a href="index.html" class="cta-button">Volver al inicio</a>
+        <p></p>
+        <a href="#" class="cta-button">Ver video relacionado al tema</a>
+        <h1>Todo está listo, puedes salir</h1>
+    </div>
+</body>
+</html>

